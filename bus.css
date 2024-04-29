@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.container {
+    background-color: #f0f2f5;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: stretch; /* Cards will fill the remaining space vertically */
+    flex-direction: row; /* Change flex direction to row */
+}
+
+.section {
+    background-color: #889488;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-right: 50px; /* Add margin to create space between section and cards */
+}
+
+.time {
+    font-size: 16px; /* Adjust font size as needed */
+    color: black; /* Time text color */
+    margin: 0 5px; /* Adjust margin as needed */
+}
+
+.line {
+    display: inline-block;
+    width: 100%; /* Full width to center the line */
+    border-top: 1px solid black; /* Line style */
+    margin: 0 5px; /* Adjust margin as needed */
+    position: relative; /* Position relative for centering */
+    top: -3px; /* Adjust vertical positioning for centering */
+}
+
+.space {
+    display: inline-block;
+    width: 50px; /* Adjust space width as needed */
+}
+
+.spacer{
+    margin-left: 200px;
+}
+
+.spacing{
+    margin-left: 770px;
+}
+
+.time {
+    font-size: 16px; /* Adjust font size as needed */
+    color: black; /* Time text color */
+    margin: 0 5px; /* Adjust margin as needed */
+}
+
+.line {
+    display: inline-block;
+    width: 50px; /* Adjust line width as needed */
+    border-top: 1px solid black; /* Line style */
+    margin: 0 5px; /* Adjust margin as needed */
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1; /* Cards will take up remaining horizontal space */
+    overflow-y: auto; /* Add scroll if content overflows vertically */
+}
+
+.card {
+    background-color: #cce6ff;
+    align-items: center;
+    padding: 50px;
+    margin-right: 100px;
+    margin-left: 50px;
+    border-radius: 10px;
+    color: black;
+    cursor: default;
+    transition: transform 400ms, box-shadow 400ms; /* Include box-shadow in the transition */
+    box-sizing: border-box; /* Include padding in width calculation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.card h4 {
+    margin: 5px 0;
+}
+
+.card button {
+    background-color: #2b218b;
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.card button:hover {
+    background-color: #ac3b61;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Increase scale on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
+}
+
+.journey {
+    background-color: #e6e6e6; /* Light gray background */
+    padding: 10px; /* Padding around the text */
+    margin-bottom: 20px; /* Margin below the div */
+    font-size: 18px; /* Adjusted font size */
+    border-radius: 5px; /* Optional: rounded corners */
+    width: 100%; /* Ensuring it takes the full width of the cards section */
+}
+
+/* Modal styling */
+.seat-selection-box {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content of the modal */
+.seat-selection-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px; /* Adjust width as needed */
+    text-align: center;
+}
+
+/* Close button styling */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
